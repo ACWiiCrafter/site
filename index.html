@@ -1,89 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>ACWiiCrafter</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial;
-    background: #0f172a;
-    color: white;
-    text-align: center;
-}
-
-.container {
-    margin-top: 50px;
-}
-
-.card {
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 15px;
-    width: 300px;
-    margin: auto;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-}
-
-h1 {
-    margin-bottom: 10px;
-}
-
-.socials a {
-    display: block;
-    margin: 8px;
-    padding: 10px;
-    background: #334155;
-    border-radius: 8px;
-    text-decoration: none;
-    color: white;
-    transition: 0.2s;
-}
-
-.socials a:hover {
-    background: #475569;
-}
-
-iframe {
-    margin-top: 30px;
-    border-radius: 15px;
-}
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090a12">
+  <meta name="description" content="Portfolio d'ACWiiCrafter : profil, réseaux, amis et projets.">
+  <meta property="og:title" content="ACWiiCrafter — Portfolio">
+  <meta property="og:description" content="Mon profil, mes réseaux, mes amis et mes projets.">
+  <meta property="og:type" content="website">
+  <title>ACWiiCrafter — Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%238b5cf6'/%3E%3Ctext x='50' y='68' font-size='54' font-weight='800' text-anchor='middle' fill='white' font-family='sans-serif'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner"><div class="loader-logo">ACWii<span>Crafter</span></div><div class="loader-dots"><i></i><i></i><i></i></div></div>
+  </div>
 
-<div class="container">
+  <div class="shell">
+    <header>
+      <a class="brand" href="#profil" aria-label="Retour au profil">ACWii<b>Crafter</b></a>
+      <nav aria-label="Navigation principale">
+        <button class="nav-link" data-page="profil">Profil</button>
+        <button class="nav-link" data-page="reseaux">Réseaux</button>
+        <button class="nav-link" data-page="amis">Amis</button>
+        <button class="nav-link" data-page="projets">Projets</button>
+      </nav>
+    </header>
 
-    <div class="card">
-        <h1>ACWiiCrafter</h1>
-
-        <!-- Discord Status -->
-        <img src="https://lanyard.cnrad.dev/api/1182733645388197948" />
-
-        <h2>Mes réseaux</h2>
-        <div class="socials">
-            <a href="https://youtube.com/@ACWiiCrafter">YouTube</a>
-            <a href="https://twitter.com/ACWiiCrafter">Twitter/X</a>
-            <a href="https://twitch.tv/acwiicrafter">Twitch</a>
-            <a href="https://github.com/ACWiiCrafter">GitHub</a>
-            <a href="https://steamcommunity.com/id/ACWiiCrafter">Steam</a>
-            <a href="https://paypal.me/ACWiiCrafter">PayPal</a>
+    <main id="contenu">
+      <section class="page active" id="profil">
+        <div class="hero">
+          <div>
+            <div class="eyebrow">Bienvenue sur mon portfolio</div>
+            <h1>Hey, moi c'est<br><span class="gradient">ACWiiCrafter.</span></h1>
+            <p class="intro">Bienvenue sur mon espace personnel ! Retrouve ici mes réseaux, les sites de mes amis et les projets auxquels je participe.</p>
+          </div>
+          <article class="profile-card">
+            <div class="banner" id="discordBanner"></div>
+            <div class="avatar-wrap"><img class="avatar" id="discordAvatar" alt="Avatar Discord d'ACWiiCrafter" width="86" height="86" src="https://cdn.discordapp.com/embed/avatars/0.png"></div>
+            <div class="profile-content">
+              <div class="profile-name" id="discordName">ACWiiCrafter</div>
+              <div class="profile-handle" id="discordTag">Discord</div>
+              <div class="status" aria-live="polite"><span class="status-dot" id="statusDot"></span><span id="discordStatus">Chargement…</span></div>
+              <p class="profile-note" id="apiNote"></p>
+            </div>
+          </article>
         </div>
-    </div>
 
-    <!-- Discord Server Widget -->
-    <iframe 
-        src="https://discord.com/widget?id=1182751085920784395&theme=dark" 
-        width="350" 
-        height="500" 
-        allowtransparency="true" 
-        frameborder="0">
-    </iframe>
+        <div class="profile-extra">
+          <div class="section-head profile-extra-head">
+            <div>
+              <div class="eyebrow">En direct depuis Discord</div>
+              <h2>Mon profil Discord<span class="gradient">.</span></h2>
+            </div>
+            <p>Informations actualisées automatiquement.</p>
+          </div>
 
-</div>
+          <div class="profile-info-grid">
+            <article class="info-card">
+              <div class="info-heading"><span class="info-icon">💬</span><h3>Statut personnalisé</h3></div>
+              <p class="info-value" id="customStatus">Chargement…</p>
+            </article>
 
+            <article class="info-card">
+              <div class="info-heading"><span class="info-icon">🎮</span><h3>Activité actuelle</h3></div>
+              <p class="info-value" id="currentActivity">Chargement…</p>
+            </article>
+
+            <article class="info-card">
+              <div class="info-heading"><span class="info-icon">📱</span><h3>Appareils connectés</h3></div>
+              <div class="device-list" id="deviceList"><span class="info-muted">Chargement…</span></div>
+            </article>
+
+            <article class="info-card">
+              <div class="info-heading"><span class="info-icon">🎵</span><h3>Spotify</h3></div>
+              <p class="info-value" id="spotifyInfo">Chargement…</p>
+            </article>
+
+            <article class="info-card">
+              <div class="info-heading"><span class="info-icon">🪪</span><h3>Informations du compte</h3></div>
+              <div class="account-info">
+                <p><span>Nom d'utilisateur</span><strong id="accountUsername">—</strong></p>
+                <p><span>Identifiant Discord</span><strong id="accountId">—</strong></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="reseaux">
+        <div class="section-head"><div><div class="eyebrow">Retrouve-moi ailleurs</div><h1>Mes réseaux<span class="gradient">.</span></h1></div><p>Mes comptes et plateformes.</p></div>
+        <div class="grid" id="socialGrid"></div>
+      </section>
+
+      <section class="page" id="amis">
+        <div class="section-head"><div><div class="eyebrow">Les personnes de mon entourage</div><h1>Mes amis<span class="gradient">.</span></h1></div><p>Découvre les sites de mes amis.</p></div>
+        <div class="grid" id="friendsGrid"></div>
+      </section>
+
+      <section class="page" id="projets">
+        <div class="section-head"><div><div class="eyebrow">Ce que je construis et soutiens</div><h1>Mes projets<span class="gradient">.</span></h1></div><p>Clique sur une carte pour découvrir le projet ou rejoindre le Discord.</p></div>
+        <div class="grid" id="projectsGrid"></div>
+      </section>
+    </main>
+
+    <footer><span>© <span id="year"></span> ACWiiCrafter</span><span>Fait avec ♥ et beaucoup de code.</span></footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
