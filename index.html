@@ -20,12 +20,13 @@
 
   <div class="shell">
     <header>
-      <a class="brand" href="#profil" aria-label="Retour au profil">ACWii<b>Crafter</b></a>
+      <a class="brand" href="#profil" aria-label="Retour au profil"><b>ACWiiCrafter</b></a>
       <nav aria-label="Navigation principale">
         <button class="nav-link" data-page="profil">Profil</button>
         <button class="nav-link" data-page="reseaux">Réseaux</button>
         <button class="nav-link" data-page="amis">Amis</button>
         <button class="nav-link" data-page="projets">Projets</button>
+        <button class="nav-link" data-page="scams">Scams Discord</button>
       </nav>
     </header>
 
@@ -104,6 +105,106 @@
         <div class="section-head"><div><div class="eyebrow">Ce que je construis et soutiens</div><h1>Mes projets<span class="gradient">.</span></h1></div><p>Clique sur une carte pour découvrir le projet ou rejoindre le Discord.</p></div>
         <div class="grid" id="projectsGrid"></div>
       </section>
+      <section class="page" id="scams">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Reste vigilant sur Discord</div>
+      <h1>Scams Discord<span class="gradient">.</span></h1>
+    </div>
+    <p>Découvre les arnaques les plus courantes sur Discord et apprends à les reconnaître.</p>
+  </div>
+
+  <div class="scams-grid">
+
+    <article class="scam-card">
+      <div class="scam-icon">💎</div>
+      <h2>Faux Nitro</h2>
+      <p>Des personnes t'envoient des liens prétendant offrir Discord Nitro gratuitement. En réalité, ces liens peuvent conduire vers de faux sites destinés à voler ton compte.</p>
+      <div class="scam-warning">⚠️ Méfie-toi des offres Nitro trop belles pour être vraies.</div>
+    </article>
+
+    <article class="scam-card">
+      <div class="scam-icon">🎁</div>
+      <h2>Faux giveaways</h2>
+      <p>Un message t'annonce que tu as gagné un concours auquel tu n'as parfois même pas participé. On te demande ensuite de cliquer sur un lien ou de fournir des informations personnelles.</p>
+      <div class="scam-warning">⚠️ Vérifie toujours l'organisateur du concours.</div>
+    </article>
+
+    <article class="scam-card">
+      <div class="scam-icon">🤖</div>
+      <h2>Faux bots</h2>
+      <p>Certains comptes se font passer pour des bots officiels et te demandent de scanner un QR code, de cliquer sur un lien ou de connecter ton compte.</p>
+      <div class="scam-warning">⚠️ Ne fais pas confiance à un bot simplement parce qu'il semble officiel.</div>
+    </article>
+
+    <article class="scam-card">
+      <div class="scam-icon">🛡️</div>
+      <h2>Faux support Discord</h2>
+      <p>Un utilisateur prétend travailler pour Discord et affirme que ton compte va être supprimé ou sanctionné. Il essaie ensuite de récupérer tes identifiants.</p>
+      <div class="scam-warning">⚠️ Ne communique jamais ton mot de passe ou tes codes de connexion.</div>
+    </article>
+
+    <article class="scam-card">
+      <div class="scam-icon">📱</div>
+      <h2>Arnaques par QR code</h2>
+      <p>On te demande de scanner un QR code pour recevoir une récompense ou vérifier ton compte. Il peut servir à détourner ta session Discord.</p>
+      <div class="scam-warning">⚠️ Ne scanne jamais un QR code de connexion envoyé par un inconnu.</div>
+    </article>
+
+    <article class="scam-card">
+      <div class="scam-icon">🔗</div>
+      <h2>Phishing</h2>
+      <p>Un faux site copie l'apparence de Discord ou d'un autre service pour te faire entrer ton adresse e-mail, ton mot de passe ou tes informations de connexion.</p>
+      <div class="scam-warning">⚠️ Vérifie attentivement l'adresse du site avant de te connecter.</div>
+    </article>
+
+  </div>
+
+  <div class="scam-examples">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Exemples de scams</div>
+        <h2>Scams MrBeast<span class="gradient">.</span></h2>
+      </div>
+      <p>Quelques exemples de détournements et de variantes de cette arnaque.</p>
+    </div>
+
+    <article class="scam-card scam-mrbeast">
+      <div class="scam-icon">🤑</div>
+      <h2>Scam MrBeast version Geometry Dash :</h2>
+      <p>Un remix humoristique du scam MrBeast, adapté à l'univers de Geometry Dash et partagé sur le Discord de Geode.</p>
+
+      <div class="scam-image">
+        <img
+          src="images/scam-mrbeast-gd.png"
+          alt="Remix du scam MrBeast version Geometry Dash"
+          loading="lazy"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+        >
+        <div class="scam-image-placeholder">
+          <span>🎮</span>
+          <p>Illustration à ajouter</p>
+        </div>
+      </div>
+
+      <p class="scam-caption">Illustration humoristique — Geometry Dash / Geode.</p>
+    </article>
+  </div>
+
+  <div class="scam-advice">
+    <div class="scam-icon">🔒</div>
+    <div>
+      <h2>Comment éviter les scams ?</h2>
+      <ul>
+        <li>Ne clique pas sur les liens suspects.</li>
+        <li>N'envoie jamais ton mot de passe ou tes codes de connexion.</li>
+        <li>Active l'authentification à deux facteurs.</li>
+        <li>Vérifie l'identité des personnes qui te contactent.</li>
+        <li>En cas de doute, bloque et signale le compte.</li>
+      </ul>
+    </div>
+  </div>
+</section>
     </main>
 
     <footer><span>© <span id="year"></span> ACWiiCrafter</span><span>Fait avec ♥ et beaucoup de code.</span></footer>
