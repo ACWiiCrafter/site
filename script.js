@@ -21,7 +21,9 @@ const CONFIG = {
     { name: "Ryanmcyt", detail: "Site de Ryanmcyt", url: "https://ryanmcyt.fr", image: "images/ryanmcyt.png" },
     { name: "Tanox9090", detail: "Site de Tanox9090", url: "https://tanox.fr", image: "images/tanox9090.png" },
     { name: "API Tanox9090", detail: "L'API du site", url: "https://api.tanox.fr", image: "images/tanox9090.png" },
-    { name: "Komas19", detail: "Site de Komas19", url: "https://komas19.party", image: "images/komas19.png" }
+    { name: "Komas19", detail: "Site de Komas19", url: "https://komas19.party", image: "images/komas19.png" },
+    { name: "NeferWithUke", detail: "Site de NeferWithUke", url: "https://nefer.ryanmcyt.fr", image: "images/nefer.png" },
+    { name: "Clara", detail: "Site de Clara", url: "https://clara.tanox.fr", image: "images/clara.png" }
   ],
   projects: [
     { name: "ReGalt", detail: "Découvrir le site", url: "https://regalt.fr", image: "images/regalt.png" },
