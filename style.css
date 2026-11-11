@@ -325,7 +325,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--secondary); out
   .scam-advice {
     flex-direction: column;
   }
-}
+
 /* ---------- Téléchargements PDF ---------- */
 
 .downloads-grid {
