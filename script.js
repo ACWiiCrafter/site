@@ -35,7 +35,7 @@ const CONFIG = {
   ]
 };
 
-const PAGES = ["profil", "reseaux", "amis", "projets", "scams"];
+const PAGES = ["profil", "reseaux", "amis", "projets", "scams", "telechargements"];
 const $ = (id) => document.getElementById(id);
 
 /* ---------- Navigation ---------- */
