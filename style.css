@@ -326,3 +326,77 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--secondary); out
     flex-direction: column;
   }
 }
+/* ---------- Téléchargements PDF ---------- */
+
+.downloads-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.download-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 25px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: linear-gradient(145deg, rgba(23,26,43,.95), rgba(15,17,29,.95));
+  transition: .25s;
+}
+
+.download-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(139,92,246,.55);
+}
+
+.download-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 55px;
+  height: 55px;
+  border-radius: 16px;
+  background: rgba(139,92,246,.15);
+  font-size: 27px;
+}
+
+.download-info {
+  min-width: 0;
+}
+
+.download-info h2 {
+  margin: 0 0 8px;
+  font-size: 19px;
+}
+
+.download-info p {
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 13px;
+}
+
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 10px;
+  padding: 11px 16px;
+  border-radius: 12px;
+  color: white;
+  font-size: 13px;
+  font-weight: 750;
+  background: linear-gradient(110deg, #8b5cf6, #258dbb);
+  transition: .2s;
+}
+
+.download-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(139,92,246,.25);
+}
+
+@media (max-width: 650px) {
+  .downloads-grid {
+    grid-template-columns: 1fr;
+  }
+}
